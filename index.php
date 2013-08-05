@@ -13,10 +13,15 @@ include_once CONFDIR.'mysql.conf.php';
 include_once CONFDIR.'common.php';
 
 $smarty = new Smarty();
+
 $smarty->caching = true;
-$tpl = $smarty->createTemplate(TPLDIR.'index.tpl');
+
+$tpl = $smarty->createTemplate(TPLDIR.'index.htm');
+
 $titleobj = $db->ExecuteSQL('select * from hm_users');
+
 $tpl->assign('title',$titleobj['uname']);
+
 $smarty->display($tpl);
 
 ?>

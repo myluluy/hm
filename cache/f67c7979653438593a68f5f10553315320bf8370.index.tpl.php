@@ -1,5 +1,3 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-05 12:00:38
-         compiled from "/home/liulyliu/web/httpd/pages/tpl/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:141044328451ff1bbf54fe28-35206085%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -12,23 +10,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     ),
   ),
   'nocache_hash' => '141044328451ff1bbf54fe28-35206085',
-  'function' => 
-  array (
-  ),
   'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51ff1bbf6eb5f7_66414097',
+  'unifunc' => 'content_51ff2366a81d55_24552991',
   'variables' => 
   array (
     'title' => 0,
   ),
   'has_nocache_code' => false,
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51ff1bbf6eb5f7_66414097')) {function content_51ff1bbf6eb5f7_66414097($_smarty_tpl) {?><!DOCTYPE html>
+),true); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_51ff2366a81d55_24552991')) {function content_51ff2366a81d55_24552991($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
-<title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
-</title>
+<title>root1</title>
 <!-- Bootstrap -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="/pages/skin/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
