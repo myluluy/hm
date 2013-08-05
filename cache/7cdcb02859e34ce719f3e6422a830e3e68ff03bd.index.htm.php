@@ -5,21 +5,21 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7cdcb02859e34ce719f3e6422a830e3e68ff03bd' => 
     array (
       0 => '/home/liulyliu/web/httpd/pages/tpl/index.htm',
-      1 => 1375696912,
+      1 => 1375697378,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '42073448951ff23a836ee18-34851051',
   'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51ff78113c3df8_22236898',
+  'unifunc' => 'content_51ff7eda2fa6f5_71872041',
   'variables' => 
   array (
     'title' => 0,
   ),
   'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51ff78113c3df8_22236898')) {function content_51ff78113c3df8_22236898($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_51ff7eda2fa6f5_71872041')) {function content_51ff7eda2fa6f5_71872041($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
 <title>root1</title>
