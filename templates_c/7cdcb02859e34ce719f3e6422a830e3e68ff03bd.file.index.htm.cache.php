@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-05 18:30:50
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-06 17:24:33
          compiled from "/home/liulyliu/web/httpd/pages/tpl/index.htm" */ ?>
 <?php /*%%SmartyHeaderCode:42073448951ff23a836ee18-34851051%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7cdcb02859e34ce719f3e6422a830e3e68ff03bd' => 
     array (
       0 => '/home/liulyliu/web/httpd/pages/tpl/index.htm',
-      1 => 1375697378,
+      1 => 1375781073,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_51ff23a83c6161_94991999',
   'variables' => 
   array (
-    'title' => 0,
+    'userinfo' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_51ff23a83c6161_94991999')) {function content_51ff23a83c6161_94991999($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
-<title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+<title><?php echo $_smarty_tpl->tpl_vars['userinfo']->value['nickname'];?>
 </title>
 <!-- Bootstrap -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

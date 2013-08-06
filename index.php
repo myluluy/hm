@@ -1,26 +1,23 @@
 <?php
 //define
-define('DS',DIRECTORY_SEPARATOR);
-define('BASEDIR',dirname(__FILE__).DS);
-define('LIBSDIR',BASEDIR.'libs'.DS);
-define('INCDIR',BASEDIR.'include'.DS);
-define('CLASSDIR',BASEDIR.'class'.DS);
-define('CONFDIR',BASEDIR.'conf'.DS);
-define('TPLDIR',BASEDIR.'pages'.DS.'tpl'.DS);
-include_once LIBSDIR.'smarty'.DS.'Smarty.class.php';
-include_once LIBSDIR.'database'.DS.'class.MySQL.php';
-include_once CONFDIR.'mysql.conf.php';
-include_once CONFDIR.'common.php';
+require_once '.'.DIRECTORY_SEPARATOR.'include'.DIRECTORY_SEPARATOR.'include.php';
 
 $smarty = new Smarty();
-
 $smarty->caching = true;
+$tplFile = '' ;
+if(empty($_SESSION['userinfo']['uid']) && $_COOKIE('userinfo_uid')) {
+    $tplFile = 'login';
+} else {
+    $tplFile = 'index';
+}
 
-$tpl = $smarty->createTemplate(TPLDIR.'index.htm');
+$tpl = $smarty->createTemplate(TPLDIR.$tplFile.'.htm');
 
 $titleobj = $db->ExecuteSQL('select * from hm_users');
 
 $tpl->assign('title',$titleobj['uname']);
+
+$tpl->assign('userinfo',$_SESSION['userinfo']);
 
 $smarty->display($tpl);
 

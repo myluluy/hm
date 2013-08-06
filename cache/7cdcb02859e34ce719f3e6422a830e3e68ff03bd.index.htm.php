@@ -5,24 +5,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7cdcb02859e34ce719f3e6422a830e3e68ff03bd' => 
     array (
       0 => '/home/liulyliu/web/httpd/pages/tpl/index.htm',
-      1 => 1375697378,
+      1 => 1375781073,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '42073448951ff23a836ee18-34851051',
   'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_51ff7eda2fa6f5_71872041',
+  'unifunc' => 'content_5200c0d1cab6e5_82426371',
   'variables' => 
   array (
-    'title' => 0,
+    'userinfo' => 0,
   ),
   'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51ff7eda2fa6f5_71872041')) {function content_51ff7eda2fa6f5_71872041($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_5200c0d1cab6e5_82426371')) {function content_5200c0d1cab6e5_82426371($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
-<title>root1</title>
+<title>悲劇さん</title>
 <!-- Bootstrap -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="/pages/skin/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
