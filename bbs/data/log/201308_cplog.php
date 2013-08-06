@@ -1,0 +1,14 @@
+<?PHP exit;?>	1375784118	root	1	127.0.0.1		GET={}; POST={};
+<?PHP exit;?>	1375784119	root	1	127.0.0.1	index	GET={}; POST={};
+<?PHP exit;?>	1375784123	root	1	127.0.0.1	setting	GET={operation=basic; }; POST={};
+<?PHP exit;?>	1375784124	root	1	127.0.0.1	nav	GET={}; POST={};
+<?PHP exit;?>	1375784124	root	1	127.0.0.1	moderate	GET={}; POST={};
+<?PHP exit;?>	1375784125	root	1	127.0.0.1	portalcategory	GET={}; POST={};
+<?PHP exit;?>	1375784125	root	1	127.0.0.1	forums	GET={}; POST={};
+<?PHP exit;?>	1375784129	root	1	127.0.0.1	founder	GET={operation=perm; }; POST={};
+<?PHP exit;?>	1375784132	root	1	127.0.0.1	index	GET={}; POST={};
+<?PHP exit;?>	1375784134	root	1	127.0.0.1	setting	GET={operation=basic; }; POST={};
+<?PHP exit;?>	1375784137	root	1	127.0.0.1	nav	GET={}; POST={};
+<?PHP exit;?>	1375784142	root	1	127.0.0.1	portalcategory	GET={}; POST={};
+<?PHP exit;?>	1375784144	root	1	127.0.0.1	forums	GET={}; POST={};
+<?PHP exit;?>	1375784146	root	1	127.0.0.1	index	GET={}; POST={};

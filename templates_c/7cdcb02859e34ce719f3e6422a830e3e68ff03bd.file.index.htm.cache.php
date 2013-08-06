@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-06 17:24:33
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-06 17:25:55
          compiled from "/home/liulyliu/web/httpd/pages/tpl/index.htm" */ ?>
 <?php /*%%SmartyHeaderCode:42073448951ff23a836ee18-34851051%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7cdcb02859e34ce719f3e6422a830e3e68ff03bd' => 
     array (
       0 => '/home/liulyliu/web/httpd/pages/tpl/index.htm',
-      1 => 1375781073,
+      1 => 1375781099,
       2 => 'file',
     ),
   ),

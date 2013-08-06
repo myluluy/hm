@@ -5,21 +5,21 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7cdcb02859e34ce719f3e6422a830e3e68ff03bd' => 
     array (
       0 => '/home/liulyliu/web/httpd/pages/tpl/index.htm',
-      1 => 1375781073,
+      1 => 1375781099,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '42073448951ff23a836ee18-34851051',
   'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5200c0d1cab6e5_82426371',
+  'unifunc' => 'content_5200c123cb7be3_86671580',
   'variables' => 
   array (
     'userinfo' => 0,
   ),
   'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5200c0d1cab6e5_82426371')) {function content_5200c0d1cab6e5_82426371($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_5200c123cb7be3_86671580')) {function content_5200c123cb7be3_86671580($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
 <title>悲劇さん</title>
