@@ -5,14 +5,20 @@
  *
  * */  
 
+
+//system config
 error_reporting(E_ALL & ~E_NOTICE);
 
-$cfg['cookie_timer'] = 3600*48;
 
-$cfg['charset'] = 'utf8';
 
-//$cfg['session_timer'] = 720;
 
+//default config
+
+$cfg = array(
+    'cookie_timer' => 3600*48,
+    'charset' => 'utf8',
+
+);
 
 session_start();
 

@@ -1,6 +1,6 @@
 <?php
 define('DS',DIRECTORY_SEPARATOR);
-define('BASEDIR',$_SERVER['DOCUMENT_ROOT'].DS);
+define('BASEDIR',dirname(__FILE__).DS.'..'.DS);
 define('LIBSDIR',BASEDIR.'libs'.DS);
 define('INCDIR',BASEDIR.'include'.DS);
 define('CLASSDIR',BASEDIR.'class'.DS);
