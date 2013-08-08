@@ -9,9 +9,7 @@ define('PLUGIN',BASEDIR.'plugin'.DS);
 define('TPLDIR',BASEDIR.'pages'.DS.'tpl'.DS);
 require_once LIBSDIR.'smarty'.DS.'Smarty.class.php';
 require_once LIBSDIR.'database'.DS.'class.MySQL.php';
-require_once CONFDIR.'mysql.conf.php';
-require_once CONFDIR.'common.php';
-require_once PLUGIN.'functions.php';
-
-$db->ExecuteSQL('SET NAMES"'.$cfg['charset'].'"');
+require_once CONFDIR.'config.inc.php';
+require_once CLASSDIR.'class.fm.php';
+require_once 'common.inc.php'
 ?>

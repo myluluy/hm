@@ -12,18 +12,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'nocache_hash' => '1636374605520201c0d3dc39-49962011',
   'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.13',
-  'unifunc' => 'content_5202134dde6e68_86044109',
-  'variables' => 
-  array (
-    'userinfo' => 0,
-    'tpl_path' => 0,
-  ),
+  'unifunc' => 'content_52034e3bab71d7_59980165',
   'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5202134dde6e68_86044109')) {function content_5202134dde6e68_86044109($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_52034e3bab71d7_59980165')) {function content_52034e3bab71d7_59980165($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
-<title>悲劇さん</title>
+<title></title>
 <!-- Bootstrap -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="http://www.myhaha.com/huamei/pages/skin/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
