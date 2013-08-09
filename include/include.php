@@ -10,6 +10,5 @@ define('TPLDIR',BASEDIR.'pages'.DS.'tpl'.DS);
 require_once LIBSDIR.'smarty'.DS.'Smarty.class.php';
 require_once LIBSDIR.'database'.DS.'class.MySQL.php';
 require_once CONFDIR.'config.inc.php';
-require_once CLASSDIR.'class.fm.php';
 require_once 'common.inc.php'
 ?>

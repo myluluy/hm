@@ -5,13 +5,22 @@
  *
  * */  
 
-
+global $cfg;
 $cfg = array();
 
 //system config
 $cfg['debug'] = 1;
 $cfg['admin_email'] ='@';
 $cfg['web_close'] = 0;
+//$cfg['regexp'] = array(
+//    'mobile'=>'//',
+//    'chinese'=>'//',
+//    'telephone'=>'//',
+//    'email'=>'//',
+//    'passowrd'=>'//',
+//    'username'=>'//'
+//
+//);
 
 //mysql config
 $cfg['mysql_database'] = 'fm_project';

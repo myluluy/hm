@@ -2,6 +2,7 @@
 
 preg_match('/\s/','ab');
 require_once '../include/include.php';
+require_once '../plugin/functions.php';
 
 /*
  *
@@ -21,8 +22,6 @@ $args = array(
 
 $post = filter_check($_POST);
 
-
-
 $post = filter_check(array(
     'username'=>'myluluy',
     'password'=>'1234567',
@@ -31,57 +30,13 @@ $post = filter_check(array(
 ));
 
 
-if(validate(trim($post['username']),array('minlength'=>4,'maxlength'=>20,'regexp'=>'/^[0-9a-zA-Z\_]+$/'))) {
-    $args['username'] = trim($post['username']); 
-} else {
-   die('fail') ;
-}
+$username_chk = validate(trim($post['username']),array('notnull'=>true,'regexp'=>'/^[0-9a-zA-Z\_]{4,20}$/'));
 
-function validate($str,$arr = array()) {
-    if(isset($arr['notnull']) && $arr['notnull'] && $str == '') {
-        return false;
-    }
+
+if(!$username_chk) {
     
-    if(isset($arr['maxlength']) && strlen($str) >= $arr['maxlength']) {
-        return false ;
-    }
-
-    if(isset($arr['maxlength']) && strlen($str) <= $arr['minlength']) {
-        return false ;
-    }
-
-    if(isset($arr['regexp'])  && !preg_match($arr['regexp'],$str)) {
-        return false;
-    }
-
-    return true;
 
 }
 
-function filter_check($array) {
 
-    if(!@get_magic_quotes_gpc()){
-        
-        if(is_array ($array)) {
-
-            foreach($array as $k => $v) {
-
-                $array[$k] = filter_check($v);
-
-            }
-
-        } else if(is_string($array)) {
-
-            $array = addslashes($array);
-
-        } else if(is_numeric($array)) {
-
-            $array = intval($array);
-
-        }
-        
-    }
-    
-    return $array;
-}
 ?>

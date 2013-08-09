@@ -1,4 +1,7 @@
 <?php
 //define
-require_once 'include/include.php';
+
+require 'router.php';
+
+
 ?>
