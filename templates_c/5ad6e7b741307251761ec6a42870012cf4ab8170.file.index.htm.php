@@ -1,14 +1,43 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-14 16:52:23
+         compiled from "pages/tpl/index.htm" */ ?>
+<?php /*%%SmartyHeaderCode:16254454855209d5860b6593-38524417%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '5ad6e7b741307251761ec6a42870012cf4ab8170' => 
+    array (
+      0 => 'pages/tpl/index.htm',
+      1 => 1376470341,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '16254454855209d5860b6593-38524417',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_5209d58617c8b0_71620716',
+  'variables' => 
+  array (
+    'tpl_path' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5209d58617c8b0_71620716')) {function content_5209d58617c8b0_71620716($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
 <title>hehe</title>
 <!-- Bootstrap -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="{$tpl_path}/skin/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="{$tpl_path}/skin/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-<link href="{$tpl_path}/skin/css/index.css" rel="stylesheet" media="screen">
+<link href="<?php echo $_smarty_tpl->tpl_vars['tpl_path']->value;?>
+/skin/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="<?php echo $_smarty_tpl->tpl_vars['tpl_path']->value;?>
+/skin/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="<?php echo $_smarty_tpl->tpl_vars['tpl_path']->value;?>
+/skin/css/index.css" rel="stylesheet" media="screen">
 <!--<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="{$tpl_path}/skin/bootstrap/js/bootstrap.min.js"></script>-->
+<script src="<?php echo $_smarty_tpl->tpl_vars['tpl_path']->value;?>
+/skin/bootstrap/js/bootstrap.min.js"></script>-->
 </head>
 <body>
 
@@ -61,6 +90,9 @@
 </body>
 <!--<script src="../js/lazy-load.js"></script>-->
 
-<link href="{$tpl_path}/js/stream.css" rel="stylesheet" media="screen">
-<script src="{$tpl_path}/js/stream.js"></script>
+<link href="<?php echo $_smarty_tpl->tpl_vars['tpl_path']->value;?>
+/js/stream.css" rel="stylesheet" media="screen">
+<script src="<?php echo $_smarty_tpl->tpl_vars['tpl_path']->value;?>
+/js/stream.js"></script>
 </html>
+<?php }} ?>

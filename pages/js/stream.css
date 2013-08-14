@@ -1,0 +1,22 @@
+/*stream css*/
+.stream-hm-plugin {
+    padding:15px;
+}
+.stream-hm-plugin:after{
+   clear:both;
+   content:'.';
+   display:block;
+   visibility : hidden;
+   height: 0px;
+}
+
+.stream-hm-plugin>* {
+    width : auto;
+    padding : 10px;
+    height: auto;
+    position : absolute;
+    display:inline-block;
+    overflow:hidden;
+    word-wrap:break-word;
+}
+
