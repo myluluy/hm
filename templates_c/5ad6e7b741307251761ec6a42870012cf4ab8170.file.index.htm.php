@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-14 16:52:23
+<?php /* Smarty version Smarty-3.1.13, created on 2013-08-15 14:35:16
          compiled from "pages/tpl/index.htm" */ ?>
 <?php /*%%SmartyHeaderCode:16254454855209d5860b6593-38524417%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5ad6e7b741307251761ec6a42870012cf4ab8170' => 
     array (
       0 => 'pages/tpl/index.htm',
-      1 => 1376470341,
+      1 => 1376548513,
       2 => 'file',
     ),
   ),
@@ -83,15 +83,47 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <div style="height:183px">16</div> 
                 <div style="height:98px">17</div> 
                 <div style="height:255px">18</div> 
+                <div style="height:333px">1</div> 
+                <div style="height:433px">2</div> 
+                <div style="height:233px">3</div> 
+                <div style="height:623px">4</div> 
+                <div style="height:71px">5</div> 
+                <div style="height:118px">6</div> 
+                <div style="height:99px">7</div> 
+                <div style="height:267px">8</div> 
+                <div style="height:193px">9</div> 
+                <div style="height:93px">10</div> 
+                <div style="height:88px">11</div> 
+                <div style="height:234px">12</div> 
+                <div style="height:384px">13</div> 
+                <div style="height:532px">14</div> 
+                <div style="height:292px">15</div> 
+                <div style="height:183px">16</div> 
+                <div style="height:98px">17</div> 
+                <div style="height:255px">18</div> 
+                <div style="height:333px">1</div> 
+                <div style="height:433px">2</div> 
+                <div style="height:233px">3</div> 
+                <div style="height:623px">4</div> 
+                <div style="height:71px">5</div> 
+                <div style="height:118px">6</div> 
+                <div style="height:99px">7</div> 
+                <div style="height:267px">8</div> 
+                <div style="height:193px">9</div> 
+                <div style="height:93px">10</div> 
+                <div style="height:88px">11</div> 
+                <div style="height:234px">12</div> 
+                <div style="height:384px">13</div> 
+                <div style="height:532px">14</div> 
+                <div style="height:292px">15</div> 
+                <div style="height:183px">16</div> 
+                <div style="height:98px">17</div> 
+                <div style="height:255px">18</div> 
             </div>
         </div>
     </div>
 </div>
 </body>
-<!--<script src="../js/lazy-load.js"></script>-->
-
-<link href="<?php echo $_smarty_tpl->tpl_vars['tpl_path']->value;?>
-/js/stream.css" rel="stylesheet" media="screen">
 <script src="<?php echo $_smarty_tpl->tpl_vars['tpl_path']->value;?>
 /js/stream.js"></script>
 </html>

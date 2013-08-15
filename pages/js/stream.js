@@ -3,7 +3,7 @@
  * author : liuluying  
  *
  * */
-
+//TODO:
 (function(w,d){
     
     var Stream = function(cfgs){
@@ -11,7 +11,7 @@
 
         config = extend({
             containerId:'',
-            itemWidth : 320,
+            itemWidth : 226,
             center : true,
             sort : false
         },cfgs),container = d.getElementById(config.containerId);
@@ -38,8 +38,12 @@
             parseFloat(getStyle(items[0],'padding-bottom')) + items[0].offsetHeight - items[0].clientHeight,
         
         columnWidth = itemOffsetWidth + config.itemWidth;
+        
+        
 
-        var columnsData = (function(){
+        var columnsData;
+        
+        function getColumnsData (){
             var columns = Math.max(1,parseInt(getContainerWidth()/columnWidth)),data = [];
             var overflowWidth = getContainerWidth()%columnWidth;
                 overOfst = 0;
@@ -56,19 +60,14 @@
             }
             
             return  data;
-        })();
-        
-        var initPosition =  {
-            left : columnsData[0].left,
-            top : columnsData[0].height
         }
         
         function itemMapStyle(item) {
             var column = columnsData.sort(function(a,b){
                 return a.height - b.height;
             })[0];
-            initLeft = initPosition.left; 
-            initTop =  initPosition.top;
+            initLeft = parseFloat(getStyle(item,'left')); 
+            initTop =  parseFloat(getStyle(item,'top'));
             cLeft = column.left;
             cTop = column.height;
             column.height += itemOffsetHeight + parseFloat(getStyle(item,'height'));
@@ -88,20 +87,20 @@
                 return b.height - a.height
             })[0].height +'px';
             if(config.animate) {
+                var n = +new Date;
                 animate({
-                    time : config.animate.time,
+                    duration : config.animate.duration,
                     fps : config.animate.fps,
                     func : function(args){
                         for(var i=0;i<items.length; i++) {
                             var item = items[i];
-                            var f = args.currFrame/args.totalFps;
+                            var f = args.currFrame/args.frames;
                             item.item.style.width = config.itemWidth + 'px';
                             item.item.style.left = item.initLeft + item.pLeft*f + 'px';
                             item.item.style.top = item.initTop + item.pTop*f + 'px';
                         }
                     },
                     callback:function(args){
-                        //console.info(+new Date - args.startTime);
                     }
                 }); 
             } else {
@@ -117,10 +116,17 @@
         }
 
         function initItems(){
+            columnsData = getColumnsData();
             var cloneItems = items.concat([]);
             var itemStyles = [];
             while(cloneItems.length >0) {
                 var item =cloneItems.shift(); 
+                if(!item.hasLoaded) {
+                    item.hasLoaded = true;
+                    item.style.position = 'absolute';
+                    item.style.left = columnsData[0].left + 'px';
+                    item.style.top = columnsData[0].height + 'px';
+                }
                 itemStyles.push(itemMapStyle(item));
             }
 
@@ -140,27 +146,35 @@
         };
 
         function delItem(items) {
-        
+             
         };
 
 
         function reload() {
-        
+            var timer ;
+            clearTimeout(timer);
+            timer = setTimeout(function(){
+                initItems();
+            },1000);
         };
 
         function __construct() {
             initItems();
+            this.reload = reload;
+
+            if(config.resize) {
+                window.onresize = reload;        
+            }
         
         }
-        __construct();
+        this.__construct = __construct;
+
     };
 
     Stream.prototype = {
         constructor : Stream,
-        initItems: function(){
-        },
         run : function(){
-         
+            this.__construct(); 
         } 
     }
 
@@ -191,26 +205,31 @@
     } 
 
     function animate(args) {
-        var time = args.time || 1;
-        var fps = args.fps || 20;
+        var duration = args.duration ||1000;
+        var fps = args.fps || 36;
         var cfg ={
-            time : time,
             fps : fps,
             currFrame : 0,
-            totalFps : time*fps
+            frames : Math.ceil(duration * fps/1000) 
         };
-        var n = +new Date
-        timer = setInterval(function(){
-            if(cfg.currFrame > cfg.totalFps) {
+
+        if(animate.animating) {
+            return;
+        }
+        animate.animating = true
+        
+        var timer = setInterval(function(){
+            if(cfg.currFrame >= cfg.frames) {
                 clearInterval(timer);
                 if('function' == typeof args.callback) {
                     args.callback(cfg);
                 }
+                animate.animating = false;
                 return;
             }
             cfg.currFrame ++;
-            cfg.startTime = n;
             args.func(cfg);
+            
         },1000/cfg.fps);
 
 
@@ -219,9 +238,10 @@
     var stream = new Stream({
         containerId : 'stream-list',
         animate : {
-            time :0.5,
+            duration :300,
             fps : 30
-        } 
+        },
+        resize : true
     });
     stream.run();
 
