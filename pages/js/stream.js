@@ -24,6 +24,11 @@
         
         window.cont = container; 
         var items = [].slice.call(container.children);
+        
+        if(items.length == 0) {
+            return;
+        }
+
         if(config.sort) {
             items.sort(function(a,b){
                 return parseFloat(getStyle(a,'height')) - parseFloat(getStyle(b,'height'));
@@ -141,10 +146,18 @@
             parseFloat(getStyle(container,'padding-right')) + container.offsetWidth - container.clientWidth);
         }
 
-        function addItem(items) {
+        function addItem(list) {
+            var i = 0; 
+            for(; i< list; i++) {
+                if('string' == typeof list[i]) {
+                    container.innerHTML += list[i];
+                    items.push(container.lastChilend);
+                    initItems(); 
+                }
+            }
         
         };
-
+        this.addItem=addItem;
         function delItem(items) {
              
         };
@@ -174,7 +187,9 @@
     Stream.prototype = {
         constructor : Stream,
         run : function(){
-            this.__construct(); 
+            if(this.__construct){
+                this.__construct(); 
+            }
         } 
     }
 
@@ -244,5 +259,6 @@
         resize : true
     });
     stream.run();
+    stream.addItem(['<div>hehe</div>'])
 
 })(window,document,undefined)

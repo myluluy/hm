@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-08-15 14:35:16
+<?php /* Smarty version Smarty-3.1.13, created on 2013-09-15 13:31:46
          compiled from "pages/tpl/index.htm" */ ?>
 <?php /*%%SmartyHeaderCode:16254454855209d5860b6593-38524417%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5ad6e7b741307251761ec6a42870012cf4ab8170' => 
     array (
       0 => 'pages/tpl/index.htm',
-      1 => 1376548513,
+      1 => 1379219805,
       2 => 'file',
     ),
   ),
@@ -65,7 +65,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <div class="span10 box navbar-inner">
             <legend>Views Borad</legend>
             <div class="views-broad cfix stream-hm-plugin" id="stream-list">
-                <div style="height:333px">1</div> 
+                <!--<div style="height:333px">1</div> 
                 <div style="height:433px">2</div> 
                 <div style="height:233px">3</div> 
                 <div style="height:623px">4</div> 
@@ -118,7 +118,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <div style="height:292px">15</div> 
                 <div style="height:183px">16</div> 
                 <div style="height:98px">17</div> 
-                <div style="height:255px">18</div> 
+                <div style="height:255px">18</div> -->
             </div>
         </div>
     </div>
